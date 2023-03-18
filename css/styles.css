@@ -40,7 +40,6 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red ;
 }
 
 .header {
@@ -188,6 +187,25 @@ img {
   padding-bottom: 120px;
 }
 
+.strat-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.strat-icon-item {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.strat-icon-list {
+  gap: 24px;
+}
+
 .strat-tittle {
   font-weight: 500;
   font-size: 20px;
@@ -306,8 +324,6 @@ img {
   gap: 24px;
 }
 
-
-
 .team-soc-item {
   width: 40px;
   height: 40px;
@@ -319,17 +335,17 @@ img {
 }
 
 .team-soc-link {
- width: 40px;
- height: 40px;
-border-radius: 50%;
-background-color: #4D5AE5;
-display: flex;
-align-items: center;
-justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .team-soc-link:is(:hover) {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .customers {
@@ -338,15 +354,15 @@ justify-content: center;
 }
 
 .customers-tittle {
-font-weight: 700;
-font-size: 36px;
-line-height: 40px;
-margin: 0 auto;
-margin-bottom: 72px;
-text-align: center;
-letter-spacing: 0.02em;
-text-transform: capitalize;
-color: #2E2F42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
 }
 
 .customers-list {
@@ -354,9 +370,9 @@ color: #2E2F42;
 }
 
 .customers-icon {
-fill: #8E8F99;
-width: 168px;
-height: 88px;
+  fill: #8e8f99;
+  width: 168px;
+  height: 88px;
 }
 
 .customers-link {
@@ -366,21 +382,33 @@ height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #8E8F99;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
 }
 
 .customers-link:is(:hover) {
-  border-color: #404BBF;
+  border-color: #404bbf;
 }
 
-
 .customers-link:is(:hover) .customers-icon {
-fill: #404BBF;
+  fill: #404bbf;
 }
 
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  width: 115px;
+  height: 24px;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
 .studio-footer {
@@ -388,17 +416,18 @@ fill: #404BBF;
   font-size: 18px;
   line-height: 1.16;
   color: #f4f4fd;
+  margin-bottom: 16px;
 }
 
 .footer-cont {
-  max-width: 264;
   padding-top: 100px;
   padding-bottom: 100px;
-  
+  display: flex;
 }
 
 .footer-p {
   max-width: 264px;
+  height: 72px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -407,38 +436,50 @@ fill: #404BBF;
 }
 
 .social-media {
-  position: absolute;
-min-width: 96px;
-height: 24px;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.02em;
-margin: 0 auto; 
-color: #FFFFFF;
-
+  min-width: 96px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #ffffff;
+  display: flex;
 }
 
 .footer-social {
   width: 208px;
   height: 80px;
-  display: flex;
 }
 
 .footer-social-list {
-
+  width: 208px;
+  height: 40px;
+  gap: 16px;
 }
 
+.footer-social-item {
+  display: flex;
+}
+
+.footer-social {
+  margin-left: 120px;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+}
 
 .footer-social-link {
   width: 40px;
   height: 40px;
- border-radius: 50%;
- background: #FFFFFF;
-opacity: 0.1;
- display: flex;
- align-items: center;
- justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-list {
@@ -484,6 +525,20 @@ opacity: 0.1;
 .portfolio-btn:is(:hover, :focus) {
   color: #f4f4fd;
   background-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.portfolio-img {
+  width: 360px;
+  height: 420px;
+  display: block;
+}
+
+.portfolio-list-item:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-text {
