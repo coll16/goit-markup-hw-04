@@ -468,7 +468,7 @@ img {
   margin-left: 120px;
 }
 
-.footer-social-link:is(:hover) {
+.footer-social-link:is(:hover,:focus) {
   background-color: #31D0AA;
 }
 
